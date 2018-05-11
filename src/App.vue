@@ -1,12 +1,26 @@
 <template>
   <div id="app">
     <headers></headers>
-    <router-view/>
+    <div class="item">
+      <div class="item-items">
+        <router-link to="/goods">商品</router-link>
+      </div>
+      <div class="item-items">
+        <router-link to="/puts">评论家</router-link>
+      </div>
+      <div class="item-items">
+        <router-link to="">商家</router-link>
+      </div>
+    </div>
+    
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
 <script>
-import header from './components/HelloWorld'
+import header from './components/header'
 
 export default {
   name: 'App',
@@ -17,12 +31,16 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    .item{
+      width: 100%;
+      height: 40px;
+      display: flex;
+    }
+    .item .item-items{
+      text-align: center;
+      color: #4d555d;
+      flex: 1;
+      font-size: 14px;
+      line-height: 40px;
+    }
 </style>
