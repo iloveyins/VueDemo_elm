@@ -70,7 +70,7 @@
         font-size: 16px;
         line-height: 18px;
     }
-    .description{
+    .header .description{
         font-size: 12px;
         margin-bottom: 10px;
         padding-left: 3px;
