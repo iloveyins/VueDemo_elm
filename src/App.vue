@@ -9,7 +9,7 @@
         <router-link to="/puts">评论家</router-link>
       </div>
       <div class="item-items">
-        <router-link to="">商家</router-link>
+        <router-link to="/seller">商家</router-link>
       </div>
     </div>
     
@@ -31,12 +31,12 @@ export default {
 </script>
 
 <style>
-    .item{
+   #app>.item{
       width: 100%;
       height: 40px;
       display: flex;
     }
-    .item .item-items{
+    #app>.item .item-items{
       text-align: center;
       color: #4d555d;
       flex: 1;
